@@ -14,9 +14,9 @@ import retrofit2.http.POST;
 public interface UserAPI {
 
 
-    @POST("users/login")
+    @POST("user/sigin")
     Call<TokenResponse> login(@Field("email") String email, @Field("password") String password);
 
-    @POST("users/register")
+    @POST("user/signup")
     Call<TokenResponse> register(@Body UserModel users);
 }

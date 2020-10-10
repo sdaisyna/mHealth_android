@@ -54,5 +54,12 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Either email or password is incorrect", Toast.LENGTH_SHORT).show();
         }
+        openDashboard();
+    }
+
+    public void openDashboard(){
+        Intent openDash = new Intent(this, DashboardActivity.class);
+        startActivity(openDash);
+        finish();
     }
 }

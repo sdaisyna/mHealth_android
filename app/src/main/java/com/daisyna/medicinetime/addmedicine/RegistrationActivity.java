@@ -30,11 +30,11 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        regFirstName = findViewById(R.id.regFirstName);
-        regLastName = findViewById(R.id.regLastName);
-        regAge = findViewById(R.id.regAge);
-        regEmail = findViewById(R.id.regEmail);
-        regPassword = findViewById(R.id.regPassword);
+        regFirstName = findViewById(R.id.textInputLayout);
+        regLastName = findViewById(R.id.textInputLayout2);
+        regAge = findViewById(R.id.textInputLayout3);
+        regEmail = findViewById(R.id.textInputLayout4);
+        regPassword = findViewById(R.id.textInputLayout6);
         btnRegister = findViewById(R.id.btnRegister);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {

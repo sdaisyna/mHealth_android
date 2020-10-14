@@ -15,7 +15,7 @@ public interface UserAPI {
 
 
     @POST("user/sigin")
-    Call<TokenResponse> login(@Field("email") String email, @Field("password") String password);
+    Call<TokenResponse> login(@Body UserModel users);
 
     @POST("user/signup")
     Call<TokenResponse> register(@Body UserModel users);
